@@ -12,11 +12,20 @@ num.value = Math.sin(num.value);
 function elevar4() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 4);
+}
 function cuadrado() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 2);
 }
-
+function inverso() {
+var num = document.getElementById("n1");
+       if (num.value != 0) { 
+	         num.value = 1/num.value;
+			 }
+		else {
+			num.value ="no definido";
+		}	 
+}
 </script>
 </head>
 <body>
@@ -28,6 +37,7 @@ Number:
 <button onclick="cube()"> x^3 </button>
 <button onclick="elevar4()"> x^4 </button>
 <button onclick="sine()"> sin(x) </button>
+<button onclick="inverso()"> 1/x </button>
 </p>
 </body>
 </html>
